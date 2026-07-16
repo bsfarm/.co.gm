@@ -169,18 +169,312 @@
             <li>Vaccines & medication: 15,000</li>
             <li>Labour: 72,000</li>
             <li>Utilities: 40,000</li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Farm – Poultry & Horticulture</title>
+    <style>
+        /* ----- GLOBAL STYLES ----- */
+        * { box-sizing: border-box; }
+
+        body {
+            /* Light golden yellow + earth + white + green gradient */
+            background: linear-gradient(145deg, #FFF9E6 0%, #F5E6CA 40%, #EAF5E9 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1.5em 1em;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        nav {
+            background-color: #2E4A2E; /* deep green */
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav a {
+            display: block;
+            color: #f5f5dc; /* light golden */
+            text-align: center;
+            padding: 14px 18px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s, color 0.2s;
+            font-size: 0.95rem;
+        }
+        nav a:hover {
+            background-color: #E8D5B5; /* light earth */
+            color: #1e3a1e;
+        }
+
+        /* ----- CONTENT SECTIONS (cards) ----- */
+        section {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(2px);
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            padding: 25px 30px;
+            margin: 30px auto;
+            max-width: 1100px;
+            transition: transform 0.15s;
+            border-left: 6px solid #C5A87C; /* warm earth accent */
+        }
+        section:hover {
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            color: #2E4A2E;
+            border-bottom: 3px solid #E8D5B5;
+            padding-bottom: 8px;
+            margin-top: 0;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: #4A6A4A;
+            margin-top: 20px;
+        }
+
+        p, li {
+            color: #1f2e1f;
+            line-height: 1.7;
+        }
+        a {
+            color: #2E7D32;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+        ul li {
+            margin-bottom: 6px;
+        }
+
+        /* gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 3px solid #f5f0e8;
+            transition: transform 0.2s;
+            background: #e8e0d5; /* fallback for placeholder */
+        }
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        footer {
+            background-color: #2E4A2E;
+            color: #f5f5dc;
+            text-align: center;
+            padding: 18px 10px;
+            margin-top: 20px;
+            font-size: 0.95rem;
+            border-top: 4px solid #C5A87C;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            nav a { padding: 10px 12px; font-size: 0.85rem; }
+            section { padding: 18px 16px; margin: 16px 12px; }
+            .gallery img { width: 150px; height: 150px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌾 BS Farm</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#challenge">The Challenge</a>
+        <a href="#solution">Our Approach</a>
+        <a href="#market">Market</a>
+        <a href="#operations">Operations</a>
+        <a href="#team">Team</a>
+        <a href="#financials">Financials</a>
+        <a href="#future">Future</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ===== HOME ===== -->
+    <section id="home">
+        <h2>🌱 Welcome to BS Farm</h2>
+        <p><strong>BS Farm</strong> is a dynamic agricultural enterprise located in <strong>Jenoi Village, Rural Gambia</strong>. Owned and managed by <strong>Mr. Buba Saidy</strong>, our business focuses on poultry production (broilers and layers) and small‑scale horticulture, with plans to expand into a medium‑sized vegetable farm specialising in okra and cucumber. We are dedicated to supplying fresh, healthy, and affordable produce to our local community and beyond.</p>
+        <p>With a clear vision for growth and sustainability, BS Farm is committed to contributing to food security, rural employment, and economic development in The Gambia. Whether you are a customer seeking high‑quality chicken, eggs, or vegetables, or a partner interested in agricultural innovation, we invite you to join us on this journey.</p>
+        <p style="margin-top:15px;"><a href="#contact" style="background:#4CAF50; color:white; padding:10px 24px; border-radius:30px; display:inline-block; text-decoration:none;">📬 Get in Touch</a></p>
+    </section>
+
+    <!-- ===== ABOUT US ===== -->
+    <section id="about">
+        <h2>📖 About Us / Business Description</h2>
+        <p><strong>BS Farm</strong> was established by Mr. Buba Saidy, a passionate farmer with deep roots in the Jenoi community. The business operates as a sole proprietorship and is set to be formally registered soon. Our core activities include:</p>
+        <ul>
+            <li><strong>Poultry:</strong> Broiler production (500 birds per cycle, 3 cycles annually) and layer hens (200 birds) for fresh eggs.</li>
+            <li><strong>Horticulture:</strong> Cultivation of okra and cucumber on a 0.5‑hectare plot, with plans to expand and adopt irrigation.</li>
+        </ul>
+        <p><strong>Mission:</strong> To produce and supply fresh, healthy, and affordable agricultural products while empowering our community through employment and sustainable practices.</p>
+        <p><strong>Vision:</strong> To establish BS Farm as a model agribusiness in The Gambia, recognised for efficiency, quality, and profitability.</p>
+        <p><strong>Key milestones:</strong></p>
+        <ul>
+            <li><strong>2026:</strong> Launch of poultry and vegetable operations</li>
+            <li><strong>2027:</strong> Expansion to 1,000 birds per cycle and 2‑3 hectares of vegetables</li>
+            <li><strong>2028:</strong> Formal business registration and value‑added products</li>
+        </ul>
+    </section>
+
+    <!-- ===== CHALLENGE ===== -->
+    <section id="challenge">
+        <h2>⚠️ The Challenge / Problem We Solve</h2>
+        <p>Agriculture in The Gambia faces persistent challenges that limit productivity and profitability:</p>
+        <ul>
+            <li><strong>Unreliable water supply:</strong> Rain‑fed farming is vulnerable to climate variability, affecting both poultry and vegetable production.</li>
+            <li><strong>High production costs:</strong> Feed, medicine, and irrigation inputs are expensive, squeezing smallholder margins.</li>
+            <li><strong>Limited market access:</strong> Many farmers struggle to connect with consistent buyers, leading to post‑harvest losses.</li>
+            <li><strong>Low adoption of modern techniques:</strong> Without access to training and technology, yields remain suboptimal.</li>
+        </ul>
+        <p>BS Farm directly addresses these issues by using efficient production methods, diversifying income streams, and building strong local market links – ensuring that our community has reliable access to fresh, high‑quality food.</p>
+    </section>
+
+    <!-- ===== OUR APPROACH ===== -->
+    <section id="solution">
+        <h2>💡 Our Approach / What Makes Us Different</h2>
+        <p>BS Farm combines proven agricultural practices with a commitment to innovation and sustainability:</p>
+        <ul>
+            <li><strong>Integrated production:</strong> Poultry manure fertilises vegetable plots, reducing waste and input costs.</li>
+            <li><strong>Planned growth:</strong> We start small and scale systematically, reinvesting profits to expand infrastructure and capacity.</li>
+            <li><strong>Local sourcing:</strong> We prioritise local suppliers for feed and other inputs, strengthening the local economy.</li>
+            <li><strong>Water security:</strong> Our future investment in solar‑powered irrigation will ensure year‑round vegetable production, even in dry seasons.</li>
+            <li><strong>Quality assurance:</strong> Strict vaccination and hygiene protocols ensure healthy birds and safe produce.</li>
+        </ul>
+        <p>By focusing on efficiency, quality, and community, we are building a resilient agribusiness that can adapt to challenges and seize new opportunities.</p>
+    </section>
+
+    <!-- ===== MARKET ===== -->
+    <section id="market">
+        <h2>📊 Market Opportunity</h2>
+        <p>The Gambian market for poultry and vegetables is robust and growing:</p>
+        <ul>
+            <li><strong>High demand:</strong> Chicken and eggs are dietary staples, and vegetables like okra and cucumber are essential in local cuisine.</li>
+            <li><strong>Underserved rural areas:</strong> Many rural communities lack consistent access to fresh, affordable produce – a gap BS Farm can fill.</li>
+            <li><strong>Tourism and hospitality:</strong> Hotels and restaurants in urban centres require reliable supplies of quality ingredients.</li>
+            <li><strong>Regional potential:</strong> With improved production, we can supply neighbouring countries facing similar challenges.</li>
+        </ul>
+        <p>BS Farm is positioned to capture these opportunities through direct sales to households, B2B agreements with local businesses, and a strong reputation for freshness and reliability.</p>
+    </section>
+
+    <!-- ===== OPERATIONS ===== -->
+    <section id="operations">
+        <h2>⚙️ Operations & Business Model</h2>
+        <p>BS Farm runs a diversified operation with clear revenue streams:</p>
+        <ul>
+            <li><strong>Poultry:</strong> Broilers sold as live birds or dressed chicken; layers provide a constant supply of fresh eggs.</li>
+            <li><strong>Vegetables:</strong> Okra and cucumber harvested and sold directly to consumers, local shops, and restaurants.</li>
+        </ul>
+        <p><strong>Key operational details:</strong></p>
+        <ul>
+            <li>Broiler cycles: 500 birds × 3 cycles per year</li>
+            <li>Layer flock: 200 hens producing eggs daily</li>
+            <li>Vegetable plot: 0.5 hectares (expanding to 2‑3 ha with irrigation)</li>
+            <li>Workforce: Owner (Mr. Buba Saidy), family members, and 1‑2 hired workers</li>
+        </ul>
+        <p>We are currently investing in infrastructure, including poultry housing and irrigation equipment, to boost productivity and prepare for future growth.</p>
+    </section>
+
+    <!-- ===== TEAM ===== -->
+    <section id="team">
+        <h2>👥 Our Team & Impact</h2>
+        <p><strong>Mr. Buba Saidy</strong> is the owner and manager of BS Farm. With years of experience in agriculture and a passion for rural development, he leads day‑to‑day operations and strategic planning. He is supported by a dedicated team of family members and local workers, all of whom receive training and fair wages.</p>
+        <p><strong>Our impact:</strong></p>
+        <ul>
+            <li><strong>Economic:</strong> Creating jobs and generating income for the community.</li>
+            <li><strong>Social:</strong> Improving access to nutritious food and supporting local food security.</li>
+            <li><strong>Environmental:</strong> Promoting sustainable practices and efficient resource use.</li>
+        </ul>
+        <p>We believe that a thriving farm benefits everyone – from the workers who tend the crops to the families who enjoy our products.</p>
+        <h3>Key Metrics (Projected)</h3>
+        <ul>
+            <li>Annual poultry production: 1,500 broilers + 200 layers</li>
+            <li>Vegetable yield: 1+ ton per season (expanding)</li>
+            <li>Jobs created: 3‑5 direct positions</li>
+            <li>Community reach: Serving 100+ households weekly</li>
+        </ul>
+    </section>
+
+    <!-- ===== FINANCIALS ===== -->
+    <section id="financials">
+        <h2>💰 Financials & Funding</h2>
+        <p><strong>Startup Investment (GMD):</strong></p>
+        <ul>
+            <li>Broiler chicks (500): 50,000</li>
+            <li>Layer chicks (200): 30,000</li>
+            <li>Feed (110 bags): 286,000</li>
+            <li>Housing & equipment: 60,000</li>
+            <li>Vaccines & medication: 15,000</li>
+            <li>Vegetable seeds: 10,000</li>
+            <li>Irrigation setup: 40,000</li>
+            <li>Fertilisers & pesticides: 15,000</li>
+            <li><strong>Total:</strong> 506,000 GMD</li>
+        </ul>
+        <p><strong>Projected Annual Revenue:</strong></p>
+        <ul>
+            <li>Poultry: 1,020,000 GMD</li>
+            <li>Vegetables: 700,000 GMD</li>
+            <li><strong>Total Revenue:</strong> 1,720,000 GMD</li>
+        </ul>
+        <p><strong>Projected Annual Costs:</strong></p>
+        <ul>
+            <li>Feed: 286,000</li>
+            <li>Vaccines & medication: 15,000</li>
+            <li>Labour: 72,000</li>
+            <li>Utilities: 40,000</li>
             <li>Fertilisers & pesticides: 15,000</li>
             <li>Miscellaneous: 30,000</li>
             <li><strong>Total Costs:</strong> 458,000 GMD</li>
         </ul>
-        <p><strong>Net Profit (Annual):</strong> 1,262,000 GMD (73% margin)</p>
+        <p><strong>Net Profit (Annual):</strong> 1,262,000 GMD <em>(73% margin)</em></p>
         <p>We are seeking additional funding to accelerate our expansion, particularly in irrigation and infrastructure. With a projected 3x return over three years, this is a high‑potential opportunity for investors.</p>
-        <!-- Placeholder for charts – can be added later -->
     </section>
 
-    <!-- FUTURE PLANS -->
+    <!-- ===== FUTURE PLANS ===== -->
     <section id="future">
-        <h2>Future Plans & Milestones</h2>
+        <h2>🚀 Future Plans & Milestones</h2>
         <ul>
             <li><strong>2027:</strong> Expand poultry to 1,000+ birds per cycle; increase vegetable area to 2‑3 hectares with solar‑powered drip irrigation.</li>
             <li><strong>2028:</strong> Formal business registration; introduce dressed chicken and packaged vegetables; establish B2B contracts with supermarkets and hotels.</li>
@@ -189,26 +483,32 @@
         <p>Our vision aligns with the Gambian government’s agricultural development goals and the UN Sustainable Development Goals (SDGs) on zero hunger, decent work, and climate action.</p>
     </section>
 
-    <!-- GALLERY (placeholder – removed old images) -->
+    <!-- ===== GALLERY with 6 placeholders ===== -->
     <section id="gallery">
-        <h2>Gallery</h2>
-        <p><em>Photos of our poultry houses, vegetable gardens, and harvests will be added soon. Stay tuned!</em></p>
-        <!-- No images included – you can add your own later -->
+        <h2>🖼️ Gallery</h2>
+        <div class="gallery">
+            <img src="https://picsum.photos/seed/farm1/200/200" alt="Farm view 1">
+            <img src="https://picsum.photos/seed/farm2/200/200" alt="Farm view 2">
+            <img src="https://picsum.photos/seed/farm3/200/200" alt="Poultry house">
+            <img src="https://picsum.photos/seed/farm4/200/200" alt="Vegetable garden">
+            <img src="https://picsum.photos/seed/farm5/200/200" alt="Harvest">
+            <img src="https://picsum.photos/seed/farm6/200/200" alt="Community activity">
+        </div>
+        <p style="margin-top:12px; font-style:italic; color:#5a5a5a;">📸 Real photos of our farm, poultry houses, vegetable gardens, and harvests will replace these placeholders soon.</p>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ===== CONTACT ===== -->
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h2>📬 Contact Us</h2>
         <p>We would love to hear from you – whether you are a customer, a partner, or an investor.</p>
         <p><strong>📍 Location:</strong> Jenoi Village, Rural Gambia</p>
         <p><strong>📧 Email:</strong> <a href="mailto:bsfarm188@gmail.com">bsfarm188@gmail.com</a></p>
         <p><strong>📞 Phone:</strong> +220 595 9428</p>
         <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/+2205959428" target="_blank">+220 595 9428</a></p>
-        <!-- You can add a contact form here if desired -->
     </section>
 
     <footer>
-        <p>© 2026 BS Farm – Growing together for a food‑secure Gambia.</p>
+        <p>© 2026 BS Farm – Growing together for a food‑secure Gambia. 🌍</p>
     </footer>
 </body>
 </html>
